@@ -1,0 +1,27 @@
+# Python virtual environment
+.venv/
+venv/
+
+# Environment variables
+.env
+.env.local
+
+# Node
+node_modules/
+dist/
+build/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Storegit rm -r --cached .venv
+git rm --cached .env
