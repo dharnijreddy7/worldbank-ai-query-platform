@@ -6,8 +6,8 @@ AI-powered natural language to SQL analytics platform built using AWS Lambda and
 
 ## Architecture
 
-<p align="center">
-  <img src="./docs/worldbank-ai-query-platform-architecture.png" width="950"/>
+<p>
+  <img src="./worldbank-ai-query-platform.png" width="950"/>
 </p>
 
 User → React Frontend → API Gateway → Lambda Orchestrator (Bedrock SQL Generator)  
