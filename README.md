@@ -4,24 +4,26 @@ AI-powered natural language to SQL analytics platform built using AWS Lambda and
 
 ---
 
+## Architecture
+
+<p align="center">
+  <img src="./docs/worldbank-ai-query-platform-architecture.png" width="950"/>
+</p>
+
+User → React Frontend → API Gateway → Lambda Orchestrator (Bedrock SQL Generator)  
+↓  
+Lambda SQL Executor  
+↓  
+Microsoft SQL Server  
+
+---
+
 ## Overview
 
 This project enables users to query World Bank data using natural language.  
 The system converts user questions into validated SQL queries using Amazon Bedrock and executes them securely against a Microsoft SQL Server database.
 
 The architecture enforces strict read-only controls to prevent destructive operations.
-
----
-
-## Architecture
-
-![Serverless Architecture Diagram](docs/worldbank-ai-query-platform-architecture.png)
-
-User → React Frontend → API Gateway → Lambda Orchestrator (Bedrock SQL Generator)  
-                                                                                  ↓  
-                                                                      Lambda SQL Executor  
-                                                                                  ↓  
-                                                              Microsoft SQL Server  
 
 ---
 
