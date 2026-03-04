@@ -29,8 +29,6 @@ The architecture enforces strict read-only controls to prevent destructive opera
 
 ## Architecture
 
-./docs/worldbank-ai-query-platform-architecture.png
-
 User → React Frontend → API Gateway → Lambda Orchestrator (Bedrock SQL Generator)  
                                                                                   ↓  
                                                                       Lambda SQL Executor  
